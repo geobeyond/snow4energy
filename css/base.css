@@ -1,0 +1,430 @@
+/*------------------------------------------------------------------
+
+[Dashboard LESS]
+
+	Project:		Maniadmin V2.0 - Responsive Admin Theme
+	Version:		2.0
+	Last change:	07/12/2012
+	Assigned to:	Turbo
+-------------------------------------------------------------------*/
+/** *************************************
+        Menu top
+************************************ **/
+.group-menu divider-vertical {
+  height: 57px;
+}
+.group-menu .navbar-search {
+  margin-top: 14px;
+}
+.group-menu .label {
+  margin-top: 14px;
+}
+.group-menu .nav > li > a {
+  padding: 18px 10px;
+}
+.dropdown a.btn {
+  color: #ffffff;
+}
+.dropdown .modal-footer {
+  padding: 7px 15px;
+}
+.dropdown-menu .modal-body a {
+  padding: 3px 0px;
+  float: left;
+  clear: none;
+}
+.dropdown-menu a.link-modal {
+  padding: 3px 23px 3px 0;
+  float: left;
+  color: #4572a7;
+}
+.dropdown-menu a.link-modal:hover {
+  color: #4572a7;
+  text-decoration: none;
+}
+.navbar .bar-root {
+  margin-top: 10px;
+}
+.navbar .bar-root .dropdown-menu a {
+  color: #999;
+}
+.navbar .bar-root .dropdown-menu a:hover {
+  background: #222;
+}
+.navbar .bar-root .dropdown-menu img {
+  border: 1px solid #888;
+  margin-right: 4px;
+}
+.navbar .bar-root .label {
+  position: relative;
+  top: -9px;
+}
+/** *************************************
+       sidebar
+************************************ **/
+#menu-left .nav-list a {
+  border-left: 1px solid #DDDDDD;
+  border-top: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+  padding: 12px 10px;
+  color: #666666;
+  font-weight: bold;
+}
+#menu-left .nav-list a span {
+  border-left: 1px solid #DDDDDD;
+  margin-left: 6px;
+  padding-left: 6px;
+}
+#menu-left .nav-list a.active {
+  background-color: #EEEEEE;
+  text-decoration: none;
+  border-bottom: 1px solid #DDDDDD;
+}
+#menu-left .nav-list a.last {
+  border-bottom: 1px solid #DDDDDD;
+}
+#menu-left .nav-list a.current {
+  background-color: #222222;
+  border: 1px solid #222222;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+.icons-only {
+  text-align: center;
+}
+/** *************************************
+       sous-menu
+************************************ **/
+li.accordion-menu {
+  padding: 0;
+}
+li.accordion-menu .accordion-inner {
+  padding: 0;
+  border-top: none;
+}
+li.accordion-menu .nav-list {
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+li.accordion-menu .nav-list a {
+  margin-right: 0;
+}
+.togglemenuleft {
+  background: #222222;
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 0px 3px;
+}
+#widget .accordion-inner.paddind,
+#section-body .accordion-inner.paddind {
+  padding: 10px 20px 0;
+}
+/** *************************************
+       Section
+************************************ **/
+#section-body {
+  padding: 9px 0;
+}
+#section-body a {
+  color: #777777;
+}
+#section-body a:hover {
+  color: #555555;
+  text-decoration: none;
+}
+#section-body .accordion-inner {
+  padding: 9px 0 0;
+}
+#section-body .divider-vertical {
+  border-right: 1px solid #666666;
+  height: 40px;
+  margin: 0 14px 0 9px;
+  overflow: hidden;
+  width: 1px;
+}
+#section-body .accordion-heading .accordion-toggle {
+  background: #333333;
+  text-shadow: 1px 1px #222222;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+#section-body a.accordion-toggle:hover {
+  text-decoration: none;
+}
+/** *************************************
+       widget
+************************************ **/
+#widget {
+  padding: 9px 0;
+}
+#widget .table,
+#section-body .table {
+  margin-bottom: 0;
+}
+#widget a {
+  color: #777777;
+}
+#widget a:hover {
+  color: #555555;
+  text-decoration: none;
+}
+#widget .accordion-inner {
+  padding: 9px 0;
+}
+#widget .accordion-heading .accordion-toggle {
+  background: #333333;
+  text-shadow: 1px 1px #222222;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+#widget a.accordion-toggle:hover {
+  text-decoration: none;
+}
+#widget .divider-vertical {
+  border-right: 1px solid #666666;
+  height: 40px;
+  margin: 0 14px 0 9px;
+  overflow: hidden;
+  width: 1px;
+}
+.flickr li {
+  float: left;
+  margin: 6px;
+}
+.flickr img {
+  border: 3px solid #000;
+  width: 50px;
+}
+#block-top .thumbnails a {
+  position: relative;
+}
+#block-top .thumbnails .badge {
+  position: absolute;
+  left: -5px;
+  top: -7px;
+}
+#block-top .thumbnails .label {
+  position: absolute;
+  left: -5px;
+  top: -7px;
+}
+#block-top .thumbnails li {
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+/** *************************************
+       Button
+************************************ **/
+.btn-maniadmin-1 {
+  background-color: #193420 !important;
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr="#367145", endColorstr="#18331f");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#367145), to(#18331f));
+  background-image: -moz-linear-gradient(top, #367145, #18331f);
+  background-image: -ms-linear-gradient(top, #367145, #18331f);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #367145), color-stop(100%, #18331f));
+  background-image: -webkit-linear-gradient(top, #367145, #18331f);
+  background-image: -o-linear-gradient(top, #367145, #18331f);
+  background-image: linear-gradient(#367145, #18331f);
+  border-color: #18331f #18331f #112416;
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
+  -webkit-font-smoothing: antialiased;
+}
+.btn-maniadmin-2 {
+  background-color: #191c34 !important;
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr="#363d71", endColorstr="#181b33");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#363d71), to(#181b33));
+  background-image: -moz-linear-gradient(top, #363d71, #181b33);
+  background-image: -ms-linear-gradient(top, #363d71, #181b33);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #363d71), color-stop(100%, #181b33));
+  background-image: -webkit-linear-gradient(top, #363d71, #181b33);
+  background-image: -o-linear-gradient(top, #363d71, #181b33);
+  background-image: linear-gradient(#363d71, #181b33);
+  border-color: #181b33 #181b33 #111424;
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
+  -webkit-font-smoothing: antialiased;
+}
+.btn-maniadmin-3 {
+  background-color: #341930 !important;
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr="#713669", endColorstr="#331830");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#713669), to(#331830));
+  background-image: -moz-linear-gradient(top, #713669, #331830);
+  background-image: -ms-linear-gradient(top, #713669, #331830);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #713669), color-stop(100%, #331830));
+  background-image: -webkit-linear-gradient(top, #713669, #331830);
+  background-image: -o-linear-gradient(top, #713669, #331830);
+  background-image: linear-gradient(#713669, #331830);
+  border-color: #331830 #331830 #241122;
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
+  -webkit-font-smoothing: antialiased;
+}
+.btn-maniadmin-4 {
+  background-color: #3e0f38 !important;
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr="#881f7a", endColorstr="#3d0e37");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#881f7a), to(#3d0e37));
+  background-image: -moz-linear-gradient(top, #881f7a, #3d0e37);
+  background-image: -ms-linear-gradient(top, #881f7a, #3d0e37);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #881f7a), color-stop(100%, #3d0e37));
+  background-image: -webkit-linear-gradient(top, #881f7a, #3d0e37);
+  background-image: -o-linear-gradient(top, #881f7a, #3d0e37);
+  background-image: linear-gradient(#881f7a, #3d0e37);
+  border-color: #3d0e37 #3d0e37 #2b0a27;
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
+  -webkit-font-smoothing: antialiased;
+}
+.btn-maniadmin-5 {
+  background-color: #3e0f16 !important;
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr="#881f31", endColorstr="#3d0e16");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#881f31), to(#3d0e16));
+  background-image: -moz-linear-gradient(top, #881f31, #3d0e16);
+  background-image: -ms-linear-gradient(top, #881f31, #3d0e16);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #881f31), color-stop(100%, #3d0e16));
+  background-image: -webkit-linear-gradient(top, #881f31, #3d0e16);
+  background-image: -o-linear-gradient(top, #881f31, #3d0e16);
+  background-image: linear-gradient(#881f31, #3d0e16);
+  border-color: #3d0e16 #3d0e16 #2b0a10;
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
+  -webkit-font-smoothing: antialiased;
+}
+.btn-maniadmin-6 {
+  background-color: #292424 !important;
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr="#5a4e50", endColorstr="#282324");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#5a4e50), to(#282324));
+  background-image: -moz-linear-gradient(top, #5a4e50, #282324);
+  background-image: -ms-linear-gradient(top, #5a4e50, #282324);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5a4e50), color-stop(100%, #282324));
+  background-image: -webkit-linear-gradient(top, #5a4e50, #282324);
+  background-image: -o-linear-gradient(top, #5a4e50, #282324);
+  background-image: linear-gradient(#5a4e50, #282324);
+  border-color: #282324 #282324 #1d191a;
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
+  -webkit-font-smoothing: antialiased;
+}
+.btn-maniadmin-7 {
+  background-color: #524749 !important;
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr="#827174", endColorstr="#514748");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#827174), to(#514748));
+  background-image: -moz-linear-gradient(top, #827174, #514748);
+  background-image: -ms-linear-gradient(top, #827174, #514748);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #827174), color-stop(100%, #514748));
+  background-image: -webkit-linear-gradient(top, #827174, #514748);
+  background-image: -o-linear-gradient(top, #827174, #514748);
+  background-image: linear-gradient(#827174, #514748);
+  border-color: #514748 #514748 #463c3e;
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
+  -webkit-font-smoothing: antialiased;
+}
+.btn-maniadmin-8 {
+  background-color: #bdb3b4 !important;
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr="#e7e3e4", endColorstr="#bcb2b4");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#e7e3e4), to(#bcb2b4));
+  background-image: -moz-linear-gradient(top, #e7e3e4, #bcb2b4);
+  background-image: -ms-linear-gradient(top, #e7e3e4, #bcb2b4);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e7e3e4), color-stop(100%, #bcb2b4));
+  background-image: -webkit-linear-gradient(top, #e7e3e4, #bcb2b4);
+  background-image: -o-linear-gradient(top, #e7e3e4, #bcb2b4);
+  background-image: linear-gradient(#e7e3e4, #bcb2b4);
+  border-color: #bcb2b4 #bcb2b4 #b2a6a8;
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.29);
+  -webkit-font-smoothing: antialiased;
+}
+.btn-maniadmin-9 {
+  background-color: #ab6969 !important;
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr="#e8d7d7", endColorstr="#aa6868");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#e8d7d7), to(#aa6868));
+  background-image: -moz-linear-gradient(top, #e8d7d7, #aa6868);
+  background-image: -ms-linear-gradient(top, #e8d7d7, #aa6868);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8d7d7), color-stop(100%, #aa6868));
+  background-image: -webkit-linear-gradient(top, #e8d7d7, #aa6868);
+  background-image: -o-linear-gradient(top, #e8d7d7, #aa6868);
+  background-image: linear-gradient(#e8d7d7, #aa6868);
+  border-color: #aa6868 #aa6868 #955454;
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.56);
+  -webkit-font-smoothing: antialiased;
+}
+.btn-maniadmin-10 {
+  background-color: #979867 !important;
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr="#cdcdb6", endColorstr="#969767");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#cdcdb6), to(#969767));
+  background-image: -moz-linear-gradient(top, #cdcdb6, #969767);
+  background-image: -ms-linear-gradient(top, #cdcdb6, #969767);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cdcdb6), color-stop(100%, #969767));
+  background-image: -webkit-linear-gradient(top, #cdcdb6, #969767);
+  background-image: -o-linear-gradient(top, #cdcdb6, #969767);
+  background-image: linear-gradient(#cdcdb6, #969767);
+  border-color: #969767 #969767 #83845a;
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.42);
+  -webkit-font-smoothing: antialiased;
+}
+/** *************************************
+       Footer
+************************************ **/
+footer {
+  background: #333333;
+  color: #FFFFFF;
+  padding: 10px 10px 4px;
+}
+/** *************************************
+        themes CSS
+************************************ **/
+.theme {
+  display: inline-block;
+  position: absolute;
+  left: -89px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-left: 0;
+  bottom: 100px;
+  z-index: 9999;
+  -moz-box-shadow: 0 0 5px #ddd;
+  -webkit-box-shadow: 0 0 5px #ddd;
+  box-shadow: 0 0 5px #ddd;
+  overflow: hidden;
+  -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+.theme h4 {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+  background: #333;
+  padding: 5px;
+  color: #ccc;
+  text-align: center;
+}
+.theme a {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+}
+.theme a.darkblue {
+  background: #2C4361;
+}
+.theme a.darkred {
+  background: #5E1111;
+}
+.theme a.default {
+  background: #222;
+}

@@ -1,0 +1,97 @@
+
+<div class="row-fluid">
+	<div class="span12">
+		<form class="typeData form-inline">
+			<p style="color:#FFFFFF">From: <input type="text" id="datepickerFrom" onchange="gotoRaster()" />
+				To: <input type="text" id="datepickerTo" onchange="gotoRaster()" />
+				<a class="btn btn-primary" onclick="">go to raster</a>
+			</p>
+		</form>
+	</div>
+</div>
+
+<div class="row-fluid">	
+	<div class="span12">
+    	<div id="map" style="height:580px"></div>
+    </div>
+</div>
+
+ <script>
+	
+	$(document).ready(function() {
+		$("#datepickerFrom").datepicker();
+		$("#datepickerTo").datepicker();
+	});
+	
+
+
+		
+		var map = new L.Map('map');
+
+		
+		/* BASE MAP */
+		// add a CloudMade tile layer with style #997
+		L.tileLayer('http://{s}.tile.cloudmade.com/2c9aaf990ed9461691b72500453a9c4b/997/256/{z}/{x}/{y}.png', {
+			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery <a href="http://cloudmade.com">CloudMade</a>'
+		}).addTo(map);
+
+
+		/* OLD CODE
+        var sdepth_gb = new L.TileLayer.WMS("http://ogsuite.geobeyond.it/geoserver/snow/wms?", {
+            layers: 'snow:snowdepthN0138_100m',
+            format: 'image/png',
+            transparent: true,
+            attribution: "SnowDepth SnowMaps",
+            opacity: .8
+        });
+		*/
+
+		var sdepth_gb = new L.TileLayer.WMS("http://ogsuite.geobeyond.it/geoserver/snow4energy/wms?", {
+            layers: 'snow4energy:AERONET_Ispra.2012308.terra.250m',
+            format: 'image/png',
+            transparent: true,
+            attribution: "NASA Snow4energy",
+            opacity: .8
+        });
+		
+        var eqOverlays = {
+            "WMS Geobeyond SnowDepth": sdepth_gb,
+        };
+
+
+        map.addLayer(sdepth_gb);
+        
+		map.setView(new L.LatLng(46.4209,12.272), 10);
+
+	
+	function gotoRaster(){
+	
+	
+	alert("ok");
+
+	 		/*var map = new L.Map('map');*/
+		alert(map.getContainer().toSource());
+		/* BASE MAP */
+		// add a CloudMade tile layer with style #997
+		/*L.tileLayer('http://{s}.tile.cloudmade.com/2c9aaf990ed9461691b72500453a9c4b/997/256/{z}/{x}/{y}.png', {
+			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery <a href="http://cloudmade.com">CloudMade</a>'
+		}).addTo(map);*/
+		
+		var sdepth_gb = new L.TileLayer.WMS("http://ogsuite.geobeyond.it/geoserver/snow4energy/wms?", {
+            layers: 'snow4energy:AERONET_Ispra.2012308.terra.250m',
+            format: 'image/png',
+            transparent: true,
+            attribution: "NASA Snow4energy",
+            opacity: .1
+        });
+		
+        var eqOverlays = {
+            "WMS Geobeyond SnowDepth": sdepth_gb,
+        };
+
+
+        map.setView(new L.LatLng(46.4209,12.272), 10).addLayer(sdepth_gb);
+        map.addControl(layersControl);
+	}
+	
+    </script>

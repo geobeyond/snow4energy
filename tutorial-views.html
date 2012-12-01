@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+	<link rel="stylesheet" href="tutorial-views_files/bootstrap.css">
+	<link rel="stylesheet" href="tutorial-views_files/leaflet.css">
+	<link rel="stylesheet" href="tutorial-views_files/MarkerCluster_002.css">
+	<link rel="stylesheet" href="tutorial-views_files/MarkerCluster.css">
+	<link rel="stylesheet" href="tutorial-views_files/slick.css">
+	<link rel="stylesheet" href="tutorial-views_files/timeline.css">
+
+	<!-- Recline CSS components -->
+	<link rel="stylesheet" href="tutorial-views_files/grid.css">
+	<link rel="stylesheet" href="tutorial-views_files/slickgrid.css">
+	<link rel="stylesheet" href="tutorial-views_files/graph.css">
+	<link rel="stylesheet" href="tutorial-views_files/transform.css">
+	<link rel="stylesheet" href="tutorial-views_files/map.css">
+	<link rel="stylesheet" href="tutorial-views_files/multiview.css">
+	<!-- /Recline CSS components -->
+
+	<!-- 3rd party JS libraries -->
+	<script src="tutorial-views_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="tutorial-views_files/jquery.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/underscore.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/backbone.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/mustache.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/bootstrap.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/flotr2.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/leaflet_002.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/leaflet.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/jquery-ui-1.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/jquery_002.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/slick.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/moment.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/timeline.js"></script>
+
+	<!-- model and backends -->
+	<script type="text/javascript" src="tutorial-views_files/ecma-fixes.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/model.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/backend_002.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/backend_007.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/backend_005.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/backend_006.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/backend_004.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/backend_003.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/backend.js"></script>
+
+	<!-- views -->
+	<script type="text/javascript" src="tutorial-views_files/view_003.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/view_002.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/view_004.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/data.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/view_006.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/view_005.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/view_007.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/widget_004.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/widget.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/widget_005.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/widget_003.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/widget_002.js"></script>
+	<script type="text/javascript" src="tutorial-views_files/view.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+<h1>TABELLA</h1>
+<div class="recline-read-only recline-slickgrid slickgrid_101044 ui-widget slickgrid_451623 slickgrid_534954 slickgrid_463201 slickgrid_62851 slickgrid_682732 slickgrid_508002 slickgrid_156589 slickgrid_932864 slickgrid_834625 slickgrid_149990 slickgrid_433276" id="mygrid" style="margin-bottom: 30px; height: 200px; overflow: hidden; outline: 0px none; position: relative;">
+</div>
+<script type="text/javascript">
+	var data = [
+	  {id: 0, date: '2011-01-01', x: 1, y: 2, z: 3, country: 'DE', geo: {lat:52.56, lon:13.40} },
+	  {id: 1, date: '2011-02-02', x: 2, y: 4, z: 24, country: 'UK', geo: {lat:54.97, lon:-1.60}},
+	  {id: 2, date: '2011-03-03', x: 3, y: 6, z: 9, country: 'US', geo: {lat:40.00, lon:-75.5}},
+	  {id: 3, date: '2011-04-04', x: 4, y: 8, z: 6, country: 'UK', geo: {lat:57.27, lon:-6.20}},
+	  {id: 4, date: '2011-05-04', x: 5, y: 10, z: 15, country: 'UK', geo: {lat:51.58, lon:0}},
+	  {id: 5, date: '2011-06-02', x: 6, y: 12, z: 18, country: 'DE', geo: {lat:51.04, lon:7.9}}
+	];
+
+	var dataset = new recline.Model.Dataset({
+	  records: data
+	});
+	var $el = $('#mygrid');
+	var grid = new recline.View.SlickGrid({
+	  model: dataset,
+	  el: $el
+	});
+	grid.visible = true;
+	grid.render();
+</script>
+
+<h1>CHART</h1>
+<div id="mygraph" style="margin-bottom: 30px;"></div> 
+<script type="text/javascript">
+	var $el = $('#mygraph');
+	var graph = new recline.View.Graph({
+	  model: dataset,
+	  state: {
+		graphType: "lines-and-points",
+		group: "x",
+		series: ["y", "z"]
+	  }
+	});
+	$el.append(graph.el);
+	graph.render();
+	graph.redraw();
+</script>
+
+
+<h1>MAPPA</h1>
+<div id="mymap"></div>
+<script type="text/javascript">
+	var $el = $('#mymap');
+	var map = new recline.View.Map({
+	  model: dataset
+	});
+	$el.append(map.el);
+	map.render();
+</script>
+
+</body>
+</html>

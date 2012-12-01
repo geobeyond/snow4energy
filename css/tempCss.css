@@ -1,0 +1,41 @@
+.jumbotron:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+.subhead {
+    border-bottom: 1px solid #DDDDDD;
+    text-align: left;
+}
+.jumbotron {
+    background: linear-gradient(45deg, #ccc 0%, #333 100%) repeat scroll 0 0 transparent;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2) inset, 0 -3px 7px rgba(0, 0, 0, 0.2) inset;
+    color: #FFFFFF;
+    padding: 15px 0 0 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+}
+
+.bs-docs-sidenav {
+    width: 258px;
+}
+.bs-docs-sidenav {
+    background-color: #FFFFFF;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    padding: 0;
+}
+
+form.typeData {
+    background: none repeat scroll 0 0 #333333;
+    height: 30px;
+    margin: 0;
+    padding: 7px;
+}
